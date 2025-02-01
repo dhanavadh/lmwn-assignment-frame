@@ -1,6 +1,7 @@
 "use client"
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+import MenuBar from './Components/MenuBar'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -122,31 +123,7 @@ export default function Home() {
 
       
         
-      <div className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[84px] ">
-          <div className="flex justify-center flex-cols-4 h-[50px] mx-4 gap-12">
-            <div className="flex flex-col items-center pt-2">              
-              <img src="/asset/icon/home.svg" className="h-6"></img>
-              <p className="mt-2 text-[12px] font-medium text-[#00AE35]">หน้าแรก</p>
-            </div>
-            <div className="flex flex-col items-center pt-2">
-              <img src="/asset/icon/order.svg" className="h-6"></img>
-              <p className="mt-2 text-[12px] font-medium">คำสั่งซื้อ</p>
-            </div>
-            <div className="flex flex-col items-center pt-2" onClick={openModal}>
-              <img src="/asset/icon/noti.svg" className="h-6"></img>
-              <p className="mt-2 text-[12px] font-medium">กล่องข้อความ</p>
-            </div>
-            <div className="flex flex-col items-center pt-2" onClick={openModal}>
-              <img src="/asset/icon/other.svg" className="h-6"></img>
-              <p className="mt-2 text-[12px] font-medium">อื่นๆ</p>
-            </div>
-            
-          </div>
-          <div className="h-[34px]">
-            <img src="/asset/Home_Indicator.svg" className="h-full w-full"></img>
-            
-          </div>
-      </div>
+      <MenuBar />
       <>      
             <Transition appear show={isOpen} as={Fragment}>
               <Dialog as="div" className="relative z-10" onClose={closeModal}>

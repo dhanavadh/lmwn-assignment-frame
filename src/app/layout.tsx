@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
+import MenuBar from "./Components/MenuBar";
 
 const notoSansThai = Noto_Sans_Thai({
   variable: "--font-noto-sans-thai",
