@@ -106,8 +106,12 @@ export default function Home() {
                     </div>
                     </div>
 
-                    <div className="flex items-center justify-center h-[112px] w-full mt-[26px] bg-green-200 rounded-[5px]">
-                    
+                    <div className="relative flex items-center justify-start h-[112px] gap-1 px-2 py-1 w-full mt-[26px] bg-gradient-to-b from-[#3BD28F] via-[#00BF62] to-[#00BC55] rounded-[5px] overflow-hidden" onClick={() => window.location.href = '/order'}>
+                      <img src="/asset/icon/Hungry_Moon_Sticker_by_LMWN.gif" className="w-20 m-1"></img>
+                      <div className='px-1'>                                    
+                          <p className='text-[18px] font-bold text-white tracking-tighter leading-6'>กำลังหาคนสั่งข้าวด้วยกันอยู่ไหม?</p>
+                          <p className='text-[14px] text-white'>ไลน์แมนสามารถแชร์ตะกร้ากับคนอื่นเพื่อสั่งอาหารแบบ<a>ไม่มีขั้นต่ำ</a>ได้แล้ววันนี้!</p>
+                      </div>
                     </div>
 
                     <div className="flex items-start justify-start w-full h-[203px] bg-yellow-500 rounded-[5px] my-6 overflow-hidden ">

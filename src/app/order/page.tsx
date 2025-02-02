@@ -65,6 +65,39 @@ setIsOpen(true)
                 </div>
                 {/* List Item */}
                 <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/ads3.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>Mixue - มี่เสวี่ย สุพรีม สามเสน</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.7 (67) | ชานมไข่มุก/ไอศกรีม</p>
+                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-1 border-[1px] flex-shrink-0 px-[3px] py-[2px] rounded-md mr-[2px]'>
+                                <img src='asset/icon/deliver.svg' className='h-[15px]'></img>
+                                <p className='text-[12px] font-bold tracking-tight leading-[12px] px-1 py-[1.5px] bg-[#DE2E42] text-white rounded-[3px]'>฿0</p>
+                            </div>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 958 m (30 นาที)</p>
+                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
+                                <div className='relative flex items-center justify-center h-[18px]   '>
+                                    <span className='absolute inline-flex h-3 w-3 bg-[#00AA47] rounded-full animate-ping'></span>
+                                    <img src="asset/icon/people.svg" className="inline-flex relative h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0"></img>                                    
+                                </div>  
+                                <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 2 คน</p>                                
+                            </div>                            
+                        </div>  
+                        <div className='flex items-center justify-between mt-1.5'>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>มี่เสวี่ย สุพรีม สามเสน</p>
+                            <div className='flex items-center'>
+                                <p className='text-[12px] text-[#404040] text-end font-semibold'>ดูสาขาอื่น</p>
+                                <img src='asset/icon/chevron_right_black.svg' className='h-[16px]'></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
                     <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
                     <div className='flex flex-col w-3/4'>
                         <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
@@ -97,24 +130,24 @@ setIsOpen(true)
                     </div>
                 </div>
                 <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <img src='asset/banner/ads2.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <img src='asset/banner/ads4.png' className='h-[105px] w-[105px] rounded-lg'></img>
                     <div className='flex flex-col w-3/4'>
-                        <p className='text-[16px] font-semibold tracking-tight'>ลุงหนวดเก้าอี้แดง</p>
+                        <p className='text-[16px] font-semibold tracking-tight'>บะหมี่หัวโต (ศรีย่าน)</p>
                         <div className='flex items-center gap-1'>
                             <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.7 (5370) | อาหารตามสั่ง</p>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.ค (2560) | อาหารจีน/ก๋วยเตี๋ยว</p>
                         </div>
                         <div className='flex items-center my-0.5'>
                             <div className='flex items-center gap-1 border-[1px] flex-shrink-0 px-[3px] py-[2px] rounded-md mr-[2px]'>
                                 <img src='asset/icon/deliver.svg' className='h-[15px]'></img>
                                 <p className='text-[12px] font-bold tracking-tight leading-[12px] px-1 py-[1.5px] bg-[#DE2E42] text-white rounded-[3px]'>฿0</p>
                             </div>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 1.7km (29 นาที)</p>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 594 m (33 นาที)</p>
                         </div>
                         <div className='flex items-center my-0.5'>
                             <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
                                 <div className='relative flex items-center justify-center h-[18px]   '>
-                                    <span className='absolute inline-flex h-4 w-4 bg-[#00AA47] rounded-full animate-ping'></span>
+                                    <span className='absolute inline-flex h-3 w-3 bg-[#00AA47] rounded-full animate-ping'></span>
                                     <img src="asset/icon/people.svg" className="inline-flex relative h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0"></img>                                    
                                 </div>  
                                 <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 2 คน</p>                                
@@ -140,12 +173,38 @@ setIsOpen(true)
                         <div className='flex items-center my-0.5'>
                             <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
                                 <div className='relative flex items-center justify-center h-[18px]   '>
-                                    <span className='absolute inline-flex h-4 w-4 bg-[#00AA47] rounded-full animate-ping'></span>
+                                    <span className='absolute inline-flex h-3 w-3 bg-[#00AA47] rounded-full animate-ping'></span>
                                     <img src="asset/icon/people.svg" className="inline-flex relative h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0"></img>                                    
                                 </div>  
                                 <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 2 คน</p>                                
                             </div>                            
-                        </div>                        
+                        </div>                     
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/ads2.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>ลุงหนวดเก้าอี้แดง</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.7 (5370) | อาหารตามสั่ง</p>
+                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-1 border-[1px] flex-shrink-0 px-[3px] py-[2px] rounded-md mr-[2px]'>
+                                <img src='asset/icon/deliver.svg' className='h-[15px]'></img>
+                                <p className='text-[12px] font-bold tracking-tight leading-[12px] px-1 py-[1.5px] bg-[#DE2E42] text-white rounded-[3px]'>฿0</p>
+                            </div>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 1.7km (29 นาที)</p>
+                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
+                                <div className='relative flex items-center justify-center h-[18px]   '>
+                                    <span className='absolute inline-flex h-3 w-3 bg-[#00AA47] rounded-full animate-ping'></span>
+                                    <img src="asset/icon/people.svg" className="inline-flex relative h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0"></img>                                    
+                                </div>  
+                                <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 2 คน</p>                                
+                            </div>                            
+                        </div>                     
                     </div>
                 </div>
                     
