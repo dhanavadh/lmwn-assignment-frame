@@ -183,7 +183,7 @@ useEffect(() => {
             </div>          
         </div>
 
-        <Link href='/summary' className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
+        <Link href='/order/summary' className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
                 <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none">
                     <div className='flex items-center gap-3'>
                         <div className='bg-white rounded-md h-[22px] px-2.5 '>

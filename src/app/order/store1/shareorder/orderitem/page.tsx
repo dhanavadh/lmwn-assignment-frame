@@ -322,11 +322,7 @@ useEffect(() => {
                                             <p className='pt-[14px] font-semibold text-[16px]'>รายละเอียดเพิ่มเติม</p>
                                             <p className=' text-[14px]'>กรุณาเลือก 1 ข้อ</p>
                                         </div>
-                                        <div className='flex items-center'>
-                                            <div className='flex items-center px-1 py-0.5 bg-[#E6F7ED] rounded-full'>
-                                                <img src='/../../../asset/icon/check_green.svg' className='h-4 w-4 mr-1'></img>
-                                                <p className='text-[12px] text-[#00A837]'>ต้องระบุ</p>
-                                            </div>
+                                        <div className='flex items-center'>                                            
                                             <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
                                         </div>
                                     </div>
