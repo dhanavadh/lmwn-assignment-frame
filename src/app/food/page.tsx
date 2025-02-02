@@ -15,7 +15,7 @@ function openModal() {
 setIsOpen(true)
 }
   return (
-    <div className="flex flex-col justify-between items-center relative min-w-screen min-h-screen font-[family-name:var(--font-noto-sans-thai)]">
+    <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
                                     
         <div className="flex flex-col justify-start overflow-x-auto scrollbar-hide">
           
@@ -31,7 +31,7 @@ setIsOpen(true)
                     <div className='px-4 flex justify-between items-center z-30'>
                         <div className='flex'>
                             <img src="asset/icon/chevron_left.svg" className="w-8 h-8 mr-3" onClick={() => window.location.href = '/'}></img>
-                            <div className='flex items-center justify-center w-8 h-8 bg-[#C2F9DC] rounded-[100%] p-1.5'>
+                            <div className='flex items-center justify-center w-8 h-8 bg-[#C2F9DC] rounded-full p-1.5 flex-shrink-0'>
                                 <img src="asset/icon/location_24_green.svg" className=""></img>
                             </div>
                             <div className='flex flex-col ml-[8px]'>
@@ -49,7 +49,7 @@ setIsOpen(true)
                     <div className="flex items-center justify-between my-[16px] bg-white w-full h-[40px] rounded-full shadow-all-lg">
                         <div className="flex items-center ">
                         <img src="asset/icon/search_green.svg" className="mx-[14px] my-[15px] w-[24px]"></img>
-                        <p className="text-[13px] text-[#404040] max-w-[300px] truncate leading-3">🧧 Chester's แจกอั่งเปา รับฟรี! ถุงเชสตี้เรียกทรัพย์ 💰</p>
+                        <p className="text-[13px] text-[#404040] max-w-[280px] truncate leading-3">🧧 Chester's แจกอั่งเปา รับฟรี! ถุงเชสตี้เรียกทรัพย์ 💰</p>
                         </div>
                     </div>
                 </div>
@@ -65,12 +65,12 @@ setIsOpen(true)
                                     <img src='asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-36'></img>
                                 </div>
                                 <div className=''>                                    
-                                    <p className='text-[18px] font-bold text-white tracking-tight'>กำลังหาคนสั่งข้าวด้วยกันอยู่ไหม?</p>
+                                    <p className='text-[18px] font-bold text-white tracking-tight leading-6'>กำลังหาคนสั่งข้าวด้วยกันอยู่ไหม?</p>
                                     <p className='text-[14px] text-white'>เลือกร้านที่สนใจแล้วแชร์ตะกร้ากับเหล่านักกินเพื่อสั่งแบบ<a>ไม่มีขั้นต่ำ!</a></p>
                                 </div>
                                 
                             </div>                            
-                            <Link href='/order' className='text-[16px] text-center font-semibold px-1.5 py-1.5 bg-white rounded-lg text-[#00ae35] w-1/4'>สั่งเลย</Link>
+                            <Link href='/order' className='text-[16px] text-center font-semibold px-1.5 py-1.5 bg-white rounded-lg text-[#00ae35] flex-shrink-0'>สั่งเลย</Link>
                         </div>
                         {/* <div className='grid grid-cols-2 gap-2'>
                             <div className='flex items-center gap-2 bg-white px-2 py-2 rounded-xl'>

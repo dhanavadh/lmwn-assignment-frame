@@ -15,7 +15,7 @@ function openModal() {
 setIsOpen(true)
 }
   return (
-    <div className="flex flex-col justify-between items-center relative min-w-screen min-h-screen font-[family-name:var(--font-noto-sans-thai)]">
+    <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
                                     
         <div className="flex flex-col justify-start overflow-x-auto scrollbar-hide">
           
@@ -41,33 +41,76 @@ setIsOpen(true)
                         
                     </div>
                     <div className='h-1 w-full bg-[#EEEEEE]'></div>
-                    <div className='flex items-start py-[9px] px-4 gap-2'>
-                        <div className='flex items-center justify-center px-[6px] py-[2px] border-2 border-[#ACEEC8] rounded-lg bg-[#E6F7ED]'>
+                    <div className='flex items-start py-[9px] px-4 gap-2 overflow-x-auto scrollbar-hide'>
+                        <div className='flex items-center justify-center px-[6px] py-[2px] border-2 border-[#ACEEC8] rounded-lg bg-[#E6F7ED] flex-shrink-0'>
                             <img src='asset/icon/tune.svg' className='h-[21px]'></img>
                         </div>
-                        <div>
+                        <div className='flex-shrink-0'>
                             <p className='text-[14px] font-semibold px-[6px] py-[2px] border-2 border-[#ACEEC8] rounded-lg bg-[#E6F7ED] text-[#00AA47]'>เปิดอยู่</p>
                         </div>
-                        <div>
+                        <div className='flex-shrink-0'>
                             <p className='text-[14px] font-semibold px-[6px] py-[2px] border-2 border-[#ACEEC8] rounded-lg bg-[#E6F7ED] text-[#00AA47]'>แชร์ตะกร้า</p>
                         </div>
-                        <div className='flex items-center gap-0.5 px-[6px] py-[2px] border-2 border-[#E0E0E0] rounded-lg bg-[#FFFFFF] text-[#7D7D7D]'>
+                        <div className='flex items-center gap-0.5 px-[6px] py-[2px] border-2 border-[#E0E0E0] rounded-lg bg-[#FFFFFF] text-[#7D7D7D] flex-shrink-0'>
                             <p className='text-[14px] font-semibold'>ราคา</p>
                             <img src='asset/icon/arrow_drop_down.svg' className='h-[21px]'></img>
                         </div>
-                        <p className='text-[14px] font-semibold px-[6px] py-[2px] border-2 border-[#E0E0E0] rounded-lg bg-[#FFFFFF] text-[#7D7D7D]'>สั่งไว้รับเลย</p>                            
-
+                        <p className='text-[14px] font-semibold px-[6px] py-[2px] border-2 border-[#E0E0E0] rounded-lg bg-[#FFFFFF] text-[#7D7D7D] flex-shrink-0'>สั่งไว้รับเลย</p>                            
+                        <div className='flex items-center gap-0.5 px-[6px] py-[2px] border-2 border-[#E0E0E0] rounded-lg bg-[#FFFFFF] text-[#7D7D7D] flex-shrink-0'>
+                            <p className='text-[14px] font-semibold'>ราคา</p>
+                            <img src='asset/icon/arrow_drop_down.svg' className='h-[21px]'></img>
+                        </div>
                     </div>
 
                 </div>
-                {/* Search Bar */}
+                {/* List Item */}
                 <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
                     <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
                     <div className='flex flex-col w-3/4'>
                         <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
                         <div className='flex items-center gap-1'>
                             <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D]'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <div className='flex flex-col w-3/4'>
+                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
+                        <div className='flex items-center gap-1'>
+                            <img src='asset/icon/star.svg' className='h-4'></img>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
                         </div>
                     </div>
                 </div>

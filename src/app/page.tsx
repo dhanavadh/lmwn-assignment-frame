@@ -14,7 +14,7 @@ export default function Home() {
     setIsOpen(true)
   }
   return (
-      <div className="flex flex-col justify-between items-center relative min-w-screen min-h-screen font-[family-name:var(--font-noto-sans-thai)]">
+      <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
                                     
         <div className="flex flex-col justify-start overflow-x-auto scrollbar-hide">
           
