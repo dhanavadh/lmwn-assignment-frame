@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
 
-const ShareOrderPage = () => {
+const ShareOrderPageCompleted = () => {
 
 const [isOpen, setIsOpen] = useState(false)
 
@@ -43,7 +43,7 @@ setIsOpen(true)
                 </div>
                 {/* List Item */}
                 
-                <Link href='/order/store1' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
                     <img src='../../asset/icon/profile.png' className='h-16 w-16 rounded-full'></img>
                     <div className='flex flex-col w-3/4'>
                         <div className='flex justify-between items-center'>
@@ -196,4 +196,4 @@ setIsOpen(true)
   )
 }
 
-export default ShareOrderPage
+export default ShareOrderPageCompleted
