@@ -72,46 +72,53 @@ setIsOpen(true)
                             <img src='asset/icon/star.svg' className='h-4'></img>
                             <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
                         </div>
-                    </div>
-                </div>
-                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
-                    <div className='flex flex-col w-3/4'>
-                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
-                        <div className='flex items-center gap-1'>
-                            <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-1 border-[1px] flex-shrink-0 px-[3px] py-[2px] rounded-md mr-[2px]'>
+                                <img src='asset/icon/deliver.svg' className='h-[15px]'></img>
+                                <p className='text-[12px] font-bold tracking-tight leading-[12px] px-1 py-[1.5px] bg-[#DE2E42] text-white rounded-[3px]'>฿9</p>
+                            </div>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 2.2km (30 นาที)</p>
+                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
+                                <div className='flex items-center justify-center h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0'>
+                                    <img src="asset/icon/people.svg" className="h-[14px]"></img>
+                                </div>  
+                                <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 4 คน</p>                                
+                            </div>                            
+                        </div>
+                        <div className='flex items-center justify-between mt-1.5'>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>The Seasons Mall</p>
+                            <div className='flex items-center'>
+                                <p className='text-[12px] text-[#404040] text-end font-semibold'>ดูสาขาอื่น</p>
+                                <img src='asset/icon/chevron_right_black.svg' className='h-[16px]'></img>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
+                    <img src='asset/banner/ads2.png' className='h-[105px] w-[105px] rounded-lg'></img>
                     <div className='flex flex-col w-3/4'>
-                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
+                        <p className='text-[16px] font-semibold tracking-tight'>ลุงหนวดเก้าอี้แดง</p>
                         <div className='flex items-center gap-1'>
                             <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.7 (5370) | อาหารตามสั่ง</p>
                         </div>
-                    </div>
-                </div>
-                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
-                    <div className='flex flex-col w-3/4'>
-                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
-                        <div className='flex items-center gap-1'>
-                            <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-1 border-[1px] flex-shrink-0 px-[3px] py-[2px] rounded-md mr-[2px]'>
+                                <img src='asset/icon/deliver.svg' className='h-[15px]'></img>
+                                <p className='text-[12px] font-bold tracking-tight leading-[12px] px-1 py-[1.5px] bg-[#DE2E42] text-white rounded-[3px]'>฿0</p>
+                            </div>
+                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'> | 1.7km (29 นาที)</p>
                         </div>
-                    </div>
-                </div>
-                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <img src='asset/banner/kfc.png' className='h-[105px] w-[105px] rounded-lg'></img>
-                    <div className='flex flex-col w-3/4'>
-                        <p className='text-[16px] font-semibold tracking-tight'>KFC - The Seasons Mall</p>
-                        <div className='flex items-center gap-1'>
-                            <img src='asset/icon/star.svg' className='h-4'></img>
-                            <p className='text-[12px] text-[#7D7D7D] tracking-tight'>4.5 (10427) | ฟาสต์ฟู้ด/จานด่วน/เบอร์เกอร์</p>
-                        </div>
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full mr-[2px]'>
+                                <div className='flex items-center justify-center h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0'>
+                                    <img src="asset/icon/people.svg" className="h-[14px]"></img>
+                                </div>  
+                                <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>มีคนสนใจแชร์ตะกร้าอยู่ 2 คน</p>                                
+                            </div>                            
+                        </div>                        
                     </div>
                 </div>
                     
