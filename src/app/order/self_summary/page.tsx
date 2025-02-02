@@ -3,10 +3,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
 
-const OrderSummary = () => {
+const SelfOrderSummaryPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
-const [isOpen1, setIsOpen1] = useState(false)
 
 function closeModal() {
 setIsOpen(false)
@@ -14,13 +13,6 @@ setIsOpen(false)
 
 function openModal() {
 setIsOpen(true)
-}
-function closeModal1() {
-setIsOpen1(false)
-}
-
-function openModal1() {
-setIsOpen1(true)
 }
   return (
     <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
@@ -38,7 +30,7 @@ setIsOpen1(true)
                 <div className="sticky top-[62px] bg-white w-full z-50">
                     <div className='px-4 flex flex-col items-start z-30'>
                         <div className='flex items-center mb-[6px]'>
-                            <img src="../../asset/icon/chevron_left.svg" className="w-8 h-8 mr-3" onClick={() => window.location.href = '/order/store1/shareorder/orderitem_completed'}></img>                            
+                            <img src="../../asset/icon/chevron_left.svg" className="w-8 h-8 mr-3" onClick={() => window.location.href = '/order/store1/shareorder/self_order_completed'}></img>                            
                             <p className='text-[16px] ml-1 font-semibold'>Mixue - มี่เสวี่ย สุพรีม สามเสน</p>                                
                         </div>                                                                        
                     </div>                    
@@ -115,72 +107,13 @@ setIsOpen1(true)
                 </div>
                 <div className='h-2 bg-[#EEEEEE]'></div>
 
-                <div className='flex flex-col px-4 items-start mt-[20px]'>                            
+                <div className='flex flex-col px-4 items-start my-[20px]'>                            
                   <div className='flex w-full items-center justify-between gap-2 mb-[10px]'>
                     <p className='text-[16px] font-semibold'>รายการอาหารที่สั่ง</p>                                                                               
                     <p className='text-[14px] font-semibold text-[#00AA47]'>สั่งอาหารเพิ่ม</p>                                                                            
                                                           
                   </div>
-                  {/* <div className='flex justify-between items-start my-2 w-full'>
-                            <div className='flex items-start gap-2'>
-                                <p className='text-[12px] px-1.5 border-[1px] rounded-md font-semibold'>1</p>
-                                <div className='flex flex-col'>
-                                    <p className='text-[12px] font-semibold'>ชานมไข่มุก</p>
-                                    <p className='text-[12px] '>หวานปกติ, น้ำแข็งปกติ</p>
-                                </div>
-                            </div>
-                            <p className='text-[12px] font-semibold'>฿50.00</p>
-                  </div>                   */}
-                </div>
-                
-                <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                    <div className='flex flex-col items-center gap-1 w-1/5'>
-                      <img src='../../asset/icon/profile.png' className='h-16 w-16 rounded-full'></img>
-                      <p className='text-[14px] font-semibold text-[#00AA47]'>ยืนยันแล้ว</p>
-                    </div>
-                    <div className='flex flex-col w-4/5'>
-                        <div className='flex justify-between items-center'>
-                            <p className='text-[16px] font-semibold tracking-tight'>Moon</p>
-                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿50.00</p>
-                        </div>
-                        <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
-                        <div className='flex justify-between items-start my-2'>
-                            <div className='flex items-start gap-2'>
-                                <p className='text-[12px] px-1.5 border-[1px] rounded-md font-semibold'>1</p>
-                                <div className='flex flex-col'>
-                                    <p className='text-[12px] font-semibold'>ชานมไข่มุก</p>
-                                    <p className='text-[12px] '>หวานปกติ, น้ำแข็งปกติ</p>
-                                </div>
-                            </div>
-                            <p className='text-[12px] font-semibold'>฿50.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าอาหาร</p>
-                            <p className='text-[12px] '>฿50.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
-                        </div>
-                        <div className='flex justify-between items-start my-0.5'>                                                                
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿50.00</p>
-                        </div>                        
-                    </div>
-                </Link>
-
-                <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
-                <div className='flex flex-col items-center gap-1 w-1/5'>
-                      <img src='../../asset/icon/profile_3.png' className='h-16 w-16 rounded-full'></img>
-                      <p className='text-[14px] font-semibold text-[#00AA47]'>ยืนยันแล้ว</p>
-                    </div>
-                    <div className='flex flex-col w-4/5'>
-                        <div className='flex justify-between items-center'>
-                            <p className='text-[16px] font-semibold tracking-tight'>Tay</p>
-                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿30.00</p>
-                        </div>
-                        <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
-                        <div className='flex justify-between items-start my-2'>
+                  <div className='flex justify-between items-start my-2 w-full'>
                             <div className='flex items-start gap-2'>
                                 <p className='text-[12px] px-1.5 border-[1px] rounded-md font-semibold'>1</p>
                                 <div className='flex flex-col'>
@@ -189,25 +122,40 @@ setIsOpen1(true)
                                 </div>
                             </div>
                             <p className='text-[12px] font-semibold'>฿30.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าอาหาร</p>
-                            <p className='text-[12px] '>฿30.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
-                        </div>
-                        <div className='flex justify-between items-start my-0.5'>                                                                
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿30.00</p>
-                        </div>                        
+                  </div>                  
+                  <div className='flex flex-col w-full'>
+                    <div className='flex justify-between items-start'>                                                                
+                        <p className='text-[12px] '>ค่าอาหาร</p>
+                        <p className='text-[12px] '>฿30.00</p>
                     </div>
-                </Link>
+                    <div className='flex justify-between items-start'>                                                                
+                        <p className='text-[12px] '>ส่วนต่างค่าอาหารขั้นต่ำ*</p>
+                        <p className='text-[12px] '>฿50.00</p>
+                    </div>
+                    <div className='flex justify-between items-start'>                                                                
+                        <p className='text-[12px] '>ค่าจัดส่ง</p>
+                        <p className='text-[12px] '>฿0.00</p>
+                    </div>
+                    <div className='flex justify-between items-start my-0.5'>                                                                
+                        <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
+                        <p className='text-[13px] font-semibold text-[#00AA47]'>฿50.00</p>
+                    </div>          
+                  </div>
+                </div>
+                
+
 
                 <div className='h-2 bg-[#EEEEEE]'></div>
 
-                <div className='flex flex-col px-4 items-start mt-[20px]'>                            
+                <div className='flex flex-col px-4 items-start mt-[20px]'>   
+                <div className='flex w-full items-center justify-between gap-2 mb-[10px] border-b-[1px] pb-3'>
+                    <p className='text-[16px] font-semibold'>2 คนสนใจแชร์ตะกร้ากับคุณ</p>                                                                               
+                    <div className='flex items-center gap-0.5' onClick={() => window.location.href = '/order/store1/shareorder'}>
+                      <p className='text-[14px] '>ดูเพิ่ม</p>   
+                      <img src='../../asset/icon/chevron_right_black.svg'></img>                                                                         
+                    </div>
+                                                          
+                  </div>                         
                   <div className='flex w-full items-center justify-between gap-2 mb-[10px]'>
                     <p className='text-[16px] font-semibold'>ชวนเพื่อนมาแชร์ตะกร้า</p>                                                                               
                     <p className='text-[14px] font-semibold text-[#00AA47]'>คัดลอกลิงก์</p>                                                                            
@@ -220,14 +168,17 @@ setIsOpen1(true)
                                     <img src='../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
                                 </div>
                                 <div className=''>                                    
-                                    <p className='text-[16px] font-semibold tracking-tight leading-6'>คัดลอกลิงก์เพื่อชวนเพื่อน</p>
+                                    <p className='text-[16px] font-semibold tracking-tight'>ประหยัดส่วนต่างค่าอาหารขั้นต่ำกับใครก็ได้</p>
                                     <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารและค่าจัดส่งแยกกัน</p>
                                 </div>                                
                         </div>
-                        <div className='text-[14px] text-center font-semibold px-1.5 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>คัดลอก</div>
+                        <div className='text-[14px] text-center font-semibold px-2 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>แชร์ลิงก์</div>
                     </div>
-                  </div>                  
+                  </div>  
+
                 </div>
+
+                
 
                 <div className='h-2 bg-[#EEEEEE]'></div>
 
@@ -267,14 +218,14 @@ setIsOpen1(true)
         </div>
 
         <div className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
-          <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none" onClick={openModal1}>
+          <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px]">
             <div className='flex items-center gap-3'>
                 <div className='bg-white rounded-md h-[22px] px-2.5 '>
                     <p className='text-[16px] font-bold text-[#00AA47]'>1</p>
                 </div>
                 <p className='text-[18px] font-bold text-white'>สั่งเลย</p>
             </div>
-            <p className='text-[18px] font-bold text-white'>฿30</p>
+            <p className='text-[18px] font-bold text-white'>฿80</p>
           </div>
           <div className="h-[34px]">
             <img src="/asset/Home_Indicator.svg" className="h-full w-full"></img>                
@@ -337,61 +288,9 @@ setIsOpen1(true)
                 </div>
               </Dialog>
             </Transition>
-
-            <Transition appear show={isOpen1} as={Fragment}>
-              <Dialog as="div" className="relative z-10" onClose={closeModal1}>
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <div className="fixed inset-0 bg-black/25" />
-                </Transition.Child>
-      
-                <div className="fixed inset-0 overflow-y-auto">
-                  <div className="flex min-h-full items-center justify-center p-4 text-center">
-                    <Transition.Child
-                      as={Fragment}
-                      enter="ease-out duration-300"
-                      enterFrom="opacity-0 scale-95"
-                      enterTo="opacity-100 scale-100"
-                      leave="ease-in duration-200"
-                      leaveFrom="opacity-100 scale-100"
-                      leaveTo="opacity-0 scale-95"
-                    >
-                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
-                        <div className='flex flex-col gap-2 items-center my-2'>
-                        <img src='/../../asset/icon/cook.gif' className='w-1/4'></img>
-                        
-                        <div className="flex flex-col items-center">
-                          <p className='text-[18px] font-semibold'>สั่งอาหารสำเร็จ</p>
-                          <p className="text-[14px] text-gray-500">
-                            เรากำลังเตรียมออเดอร์ให้คุณ
-                          </p>
-                        </div>
-                        </div>
-      
-                        <div className="mt-4">
-                          <div
-                            className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none "
-                            onClick={() => window.location.href = '/'}
-                          >
-                            รับทราบ
-                          </div>
-                        </div>
-                      </Dialog.Panel>
-                    </Transition.Child>
-                  </div>
-                </div>
-              </Dialog>
-            </Transition>
       </>
       </div>      
   )
 }
 
-export default OrderSummary
+export default SelfOrderSummaryPage

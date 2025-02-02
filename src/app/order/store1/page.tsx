@@ -6,6 +6,7 @@ import Link from 'next/link'
 const OrderPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
+const [isOpen1, setIsOpen1] = useState(false)
 const [show, setShow] = useState(false)
 
 function closeModal() {
@@ -15,6 +16,16 @@ setIsOpen(false)
 function openModal() {
 setIsOpen(true)
 }
+
+function closeModal1() {
+setIsOpen1(false)
+}
+
+function openModal1() {
+setIsOpen1(true)
+}
+
+
 
 const showTab = () => {
     if(window.scrollY >= 100){
@@ -137,7 +148,7 @@ useEffect(() => {
                 <div className='flex flex-col px-4 bg-white pt-6'>
                     <p className='text-[18px] font-semibold mb-6'>เมนูดัง คนสั่งเยอะ</p>
                     <div className='flex justify-between mb-8'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal1}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../asset/banner/shop1/menu1.png' className='object-cover w-full h-full'></img>
                             </div>
@@ -226,6 +237,182 @@ useEffect(() => {
                             เข้าใจแล้ว
                           </button>
                         </div>
+                      </Dialog.Panel>
+                    </Transition.Child>
+                  </div>
+                </div>
+              </Dialog>
+            </Transition>
+
+            <Transition appear show={isOpen1} as={Fragment}>
+              <Dialog as="div" className="relative z-10" onClose={closeModal1}>
+                {/* <Transition.Child
+                  as={Fragment}
+                  enter="transform transition ease-in-out duration-500 sm:duration-700"
+                  enterFrom="translate-y-full"
+                  enterTo="translate-y-0"
+                  leave="transform transition ease-in-out duration-500 sm:duration-700"
+                  leaveFrom="translate-y-0"
+                  leaveTo="translate-y-full"
+                >
+                  <div className="fixed inset-0 bg-white" />
+                </Transition.Child> */}
+      
+                <div className="fixed inset-0 overflow-y-auto">
+                  <div className="flex max-w-[375px] max-h-[812px] items-center justify-center text-center">
+                    <Transition.Child
+                        as={Fragment}
+                        enter="transform transition ease-in-out duration-500 sm:duration-700"
+                        enterFrom="translate-y-full"
+                        enterTo="translate-y-0"
+                        leave="transform transition ease-in-out duration-500 sm:duration-700"
+                        leaveFrom="translate-y-0"
+                        leaveTo="translate-y-full"
+                    >
+                      <Dialog.Panel className="flex flex-col h-[812px] w-full transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
+                        <div className='mb-4'>
+                            <div className='relative h-[150px] bg-blue-300 brightness-50'>
+                                <img src='/../../../asset/banner/shop1/menu1.png' className='absolute inset-0 w-full h-full object-cover'></img>
+                            </div>
+                            <div className='mt-[59px] w-9 h-9 bg-white rounded-full absolute top-0 left-4 flex items-center justify-center' onClick={closeModal}>
+                                <img src='/../../../asset/icon/close.svg'></img>
+                            </div>
+                            <div className='bg-white px-4 border-b-[1px]'>
+                                <p className='py-[18px] font-semibold text-[20px]'>น้ำมะนาว</p>
+                            </div>
+                            <div className='overflow-y-auto h-[438px] scrollbar-hide'>
+                                <div className='white-space-nowrap'>
+                                <div className='border-b-[1px] pb-[14px]'>
+                                    <div className='flex justify-between bg-white px-4'>
+                                        <div>
+                                            <p className='pt-[14px] font-semibold text-[16px]'>ท็อปปิ้ง</p>
+                                            <p className=' text-[14px]'>เลือกสูงสุด 1 ข้อ</p>
+                                        </div>
+                                        <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
+                                    </div>
+                                    <div className='flex mt-3 px-4 '>
+                                        <div className='flex ml-1 flex-col gap-4 text-[14px] w-full'>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="checkbox" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    ไข่มุก
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                <input type="checkbox" checked readOnly className='accent-green-600 mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    วุ้นมะพร้าว
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="checkbox" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    เยลลี่พีช
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="checkbox" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    เยลลี่บราวน์ชูการ์
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>                                                       
+                                        </div>
+
+                                    </div>
+                                </div>                        
+                                <div className='border-b-[1px] pb-[14px]'>
+                                    <div className='flex justify-between bg-white px-4'>
+                                        <div>
+                                            <p className='pt-[14px] font-semibold text-[16px]'>ความหวาน</p>
+                                            <p className=' text-[14px]'>กรุณาเลือก 1 ข้อ</p>
+                                        </div>
+                                        <div className='flex items-center'>
+                                            <div className='flex items-center px-1 py-0.5 bg-[#E6F7ED] rounded-full'>
+                                                <img src='/../../../asset/icon/check_green.svg' className='h-4 w-4 mr-1'></img>
+                                                <p className='text-[12px] text-[#00A837]'>ต้องระบุ</p>
+                                            </div>
+                                            <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
+                                        </div>
+                                    </div>
+                                    <div className='flex mt-3 px-4 '>
+                                        <div className='flex ml-1 flex-col gap-4 text-[14px] w-full'>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="radio" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    หวานปกติ (100%)
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                <input type="radio" checked readOnly className='accent-green-600 mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    หวาน (70%)
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="radio" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    หวาน (50%)
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>
+                                            <div className='flex items-center justify-between'>
+                                                <label className='flex items-center'>
+                                                    <input type="radio" disabled readOnly className='mr-[9px] rounded-lg w-[16px] h-[16px]'/>
+                                                    ไม่หวาน (0%)
+                                                </label>
+                                                <p>฿0</p>
+                                            </div>                                                       
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className='border-b-[1px] pb-[14px]'>
+                                    <div className='flex justify-between bg-white px-4'>
+                                        <div>
+                                            <p className='pt-[14px] font-semibold text-[16px]'>รายละเอียดเพิ่มเติม</p>
+                                            <p className=' text-[14px]'>กรุณาเลือก 1 ข้อ</p>
+                                        </div>
+                                        <div className='flex items-center'>                                            
+                                            <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
+                                        </div>
+                                    </div>
+                                    <div className='flex mt-3 px-4 '>
+                                        <label className='flex items-center w-full text-[14px] h-[46px]'>
+                                            <input type="text" disabled readOnly className='min-w-full h-full border-2 p-2 rounded-lg' placeholder='เช่น ไม่เอาผัก'/>                                            
+                                        </label>
+
+                                    </div>
+                                </div>
+                                </div>                        
+                            </div>
+                        </div>
+
+      
+                        <div className="px-4">
+                            <div className='flex items-center justify-between gap-3 w-full pb-3'>
+                                <div className='flex items-center justify-center gap-3 '>
+                                    <div className='flex items-center justify-center h-9 w-9 rounded-full bg-[#EAEAEA] opacity-50'>
+                                        <img src='/../../../asset/icon/rm.svg'></img>
+                                    </div>
+                                    <p className='text-[16px]'>1</p>
+                                    <div className='flex items-center justify-center h-9 w-9 rounded-full bg-[#EAEAEA]'>
+                                        <img src='/../../../asset/icon/add.svg'></img>
+                                    </div>
+                                </div>
+                                <Link href='/order/store1/shareorder/self_order_completed' className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none"
+                                >
+                                    <p>ใส่ตะกร้า</p>
+                                </Link>                                                                
+                            </div>
+                          
+                        </div>
+                        
                       </Dialog.Panel>
                     </Transition.Child>
                   </div>

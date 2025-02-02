@@ -143,7 +143,12 @@ useEffect(() => {
                                 <img src='../../../asset/banner/shop1/menu1.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>น้ำมะนาว</p>
-                            <p className='mt-[10px] text-[13px] font-semibold'>฿30</p>
+                            <div className='mt-[10px] flex items-start justify-between'>
+                                <p className='text-[13px] font-semibold'>฿30</p>
+                                <div className='relative bg-[#00AA47] rounded-full w-7 h-7 flex items-center justify-center'>
+                                    <p className='text-[15px] font-semibold text-white absolute'>1</p>
+                                </div>
+                            </div>
                         </div>
                         <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>

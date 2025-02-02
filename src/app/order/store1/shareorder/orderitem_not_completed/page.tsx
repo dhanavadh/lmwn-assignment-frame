@@ -3,10 +3,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
 
-const OrderSummary = () => {
+const OrderItemNotCompletedPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
-const [isOpen1, setIsOpen1] = useState(false)
 
 function closeModal() {
 setIsOpen(false)
@@ -14,13 +13,6 @@ setIsOpen(false)
 
 function openModal() {
 setIsOpen(true)
-}
-function closeModal1() {
-setIsOpen1(false)
-}
-
-function openModal1() {
-setIsOpen1(true)
 }
   return (
     <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
@@ -31,14 +23,14 @@ setIsOpen1(true)
               
               <div className='w-[375px] h-screen top-0'>
                 <div className="sticky top-0 flex justify-center h-[62px] w-full z-50 bg-white">
-                  <img src="../../asset/Status_Bar_trans.svg" className="absolute"></img>
-                  <img src="../../asset/Dynamic_Island.svg" className="absolute my-[11px]"></img>
+                  <img src="../../../asset/Status_Bar_trans.svg" className="absolute"></img>
+                  <img src="../../../asset/Dynamic_Island.svg" className="absolute my-[11px]"></img>
                 </div> 
                 {/* Header */}
                 <div className="sticky top-[62px] bg-white w-full z-50">
                     <div className='px-4 flex flex-col items-start z-30'>
                         <div className='flex items-center mb-[6px]'>
-                            <img src="../../asset/icon/chevron_left.svg" className="w-8 h-8 mr-3" onClick={() => window.location.href = '/order/store1/shareorder/orderitem_completed'}></img>                            
+                            <img src="../../../asset/icon/chevron_left.svg" className="w-8 h-8 mr-3" onClick={() => window.location.href = '/order/store1/shareorder/orderitem'}></img>                            
                             <p className='text-[16px] ml-1 font-semibold'>Mixue - มี่เสวี่ย สุพรีม สามเสน</p>                                
                         </div>                                                                        
                     </div>                    
@@ -51,29 +43,29 @@ setIsOpen1(true)
                   </div>
                   <div className='flex items-center justify-between border-b-[1px] w-full pb-[6px]'>
                     <div className='flex items-center'>
-                      <img src='../../asset/icon/location_pin.svg' className=' mr-2'></img>
+                      <img src='../../../asset/icon/location_pin.svg' className=' mr-2'></img>
                       <div>
                         <p className='text-[12px] font-semibold'>อาคารมหาจักรีสิรินธร</p>
                         <p className='text-[12px]'>Tay · 099-999-9999</p>
                       </div>
                     </div>
-                    <img src='../../asset/icon/chevron_right_black.svg'></img>
+                    <img src='../../../asset/icon/chevron_right_black.svg'></img>
                   </div>                    
                   <div className='flex items-center justify-between w-full py-[6px]'>
                     <div className='flex items-center'>
-                      <img src='../../asset/icon/note.svg' className=' mr-2'></img>
+                      <img src='../../../asset/icon/note.svg' className=' mr-2'></img>
                       <div>
                         <p className='text-[12px] font-semibold'>รูปแบบการจัดส่ง</p>
                         <p className='text-[12px] font-semibold text-[#00AA47]'>ระบุโน้ตถึงไรเดอร์</p>
                       </div>
                     </div>
-                    <img src='../../asset/icon/chevron_right_black.svg'></img>
+                    <img src='../../../asset/icon/chevron_right_black.svg'></img>
                   </div>       
                   <div className='flex items-center w-full gap-2 pb-6'>
                     <span className='w-[64px]'></span>
                     <div className='flex flex-col w-full border-[1px] rounded-md p-2'>
                       <div className='flex items-center justify-between mb-1.5'>
-                        <img src='../../asset/icon/table.svg'></img>
+                        <img src='../../../asset/icon/table.svg'></img>
                         <p className='text-[12px] font-medium text-[#00AB47] bg-[#DCF7DF] rounded-lg px-1'>แนะนำ</p>
                       </div>
                       <p className='text-[12px] font-medium'>แขวน/วาง</p>
@@ -81,14 +73,14 @@ setIsOpen1(true)
                     </div>
                     <div className='flex flex-col w-full border-[1px] rounded-md p-2'>
                       <div className='flex items-center justify-between mb-1.5'>
-                        <img src='../../asset/icon/hand_send.svg'></img>                      
+                        <img src='../../../asset/icon/hand_send.svg'></img>                      
                       </div>
                       <p className='text-[12px] font-medium'>ส่งถึงมือ/</p>
                       <p className='text-[12px] font-medium'>ออกมารับเอง</p>
                     </div>
                     <div className='flex flex-col w-full border-[1px] rounded-md p-2'>
                       <div className='flex items-center justify-between mb-1.5'>
-                        <img src='../../asset/icon/people_black.svg'></img>                        
+                        <img src='../../../asset/icon/people_black.svg'></img>                        
                       </div>
                       <p className='text-[12px] font-medium'>ฝากไว้กับ</p>
                       <p className='text-[12px] font-medium'>คนที่ระบุ</p>
@@ -100,7 +92,7 @@ setIsOpen1(true)
                 <div className='flex flex-col px-4 items-start my-[20px]'>                            
                   <div className='flex w-full items-center gap-2 mb-[10px]'>
                     <p className='text-[16px] font-semibold'>ตัวเลือกการจัดส่ง</p>                                                                               
-                    <img src='../../asset/icon/info.svg'></img>                                                                      
+                    <img src='../../../asset/icon/info.svg'></img>                                                                      
                   </div>
                   <div className='flex flex-col gap-2 w-full'>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] rounded-md p-2'>
@@ -135,7 +127,7 @@ setIsOpen1(true)
                 
                 <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
                     <div className='flex flex-col items-center gap-1 w-1/5'>
-                      <img src='../../asset/icon/profile.png' className='h-16 w-16 rounded-full'></img>
+                      <img src='../../../asset/icon/profile.png' className='h-16 w-16 rounded-full'></img>
                       <p className='text-[14px] font-semibold text-[#00AA47]'>ยืนยันแล้ว</p>
                     </div>
                     <div className='flex flex-col w-4/5'>
@@ -171,37 +163,15 @@ setIsOpen1(true)
 
                 <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
                 <div className='flex flex-col items-center gap-1 w-1/5'>
-                      <img src='../../asset/icon/profile_3.png' className='h-16 w-16 rounded-full'></img>
-                      <p className='text-[14px] font-semibold text-[#00AA47]'>ยืนยันแล้ว</p>
+                      <img src='../../../asset/icon/profile_3.png' className='h-16 w-16 rounded-full'></img>
+                      <p className='text-[14px] font-semibold text-[#7D7D7D]'>กำลังสั่ง</p>
                     </div>
                     <div className='flex flex-col w-4/5'>
                         <div className='flex justify-between items-center'>
                             <p className='text-[16px] font-semibold tracking-tight'>Tay</p>
-                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿30.00</p>
+                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿0.00</p>
                         </div>
-                        <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
-                        <div className='flex justify-between items-start my-2'>
-                            <div className='flex items-start gap-2'>
-                                <p className='text-[12px] px-1.5 border-[1px] rounded-md font-semibold'>1</p>
-                                <div className='flex flex-col'>
-                                    <p className='text-[12px] font-semibold'>น้ำมะนาว</p>
-                                    <p className='text-[12px] '>วุ้นมะพร้าว, หวาน (70%)</p>
-                                </div>
-                            </div>
-                            <p className='text-[12px] font-semibold'>฿30.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าอาหาร</p>
-                            <p className='text-[12px] '>฿30.00</p>
-                        </div>
-                        <div className='flex justify-between items-start'>                                                                
-                            <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
-                        </div>
-                        <div className='flex justify-between items-start my-0.5'>                                                                
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿30.00</p>
-                        </div>                        
+                        <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>ยังไม่มีรายการอาหารที่สั่ง</p>                                              
                     </div>
                 </Link>
 
@@ -217,7 +187,7 @@ setIsOpen1(true)
                   <div className='flex w-full justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3 gap-2'>
                         <div className='flex items-center gap-2'>                            
                                 <div className='flex items-center justify-center'>
-                                    <img src='../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
+                                    <img src='../../../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
                                 </div>
                                 <div className=''>                                    
                                     <p className='text-[16px] font-semibold tracking-tight leading-6'>คัดลอกลิงก์เพื่อชวนเพื่อน</p>
@@ -236,7 +206,7 @@ setIsOpen1(true)
                     <p className='text-[16px] font-semibold'>คูปอง</p>                                                                               
                     <div className='flex items-center gap-0.5'>
                       <p className='text-[14px] '>ใช้คูปอง</p>   
-                      <img src='../../asset/icon/chevron_right_black.svg'></img>                                                                         
+                      <img src='../../../asset/icon/chevron_right_black.svg'></img>                                                                         
                     </div>
                                                           
                   </div>
@@ -245,9 +215,9 @@ setIsOpen1(true)
                     
                     <div className='flex items-center gap-0.5'>
                       
-                      <img src='../../asset/icon/visa.svg' className='w-8 mr-2'></img>
+                      <img src='../../../asset/icon/visa.svg' className='w-8 mr-2'></img>
                       <p className='text-[14px] '>8641</p>   
-                      <img src='../../asset/icon/chevron_right_black.svg'></img>                                                                         
+                      <img src='../../../asset/icon/chevron_right_black.svg'></img>                                                                         
                     </div>
                                                           
                   </div>        
@@ -266,21 +236,15 @@ setIsOpen1(true)
             </div>          
         </div>
 
-        <div className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
-          <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none" onClick={openModal1}>
-            <div className='flex items-center gap-3'>
-                <div className='bg-white rounded-md h-[22px] px-2.5 '>
-                    <p className='text-[16px] font-bold text-[#00AA47]'>1</p>
-                </div>
-                <p className='text-[18px] font-bold text-white'>สั่งเลย</p>
-            </div>
-            <p className='text-[18px] font-bold text-white'>฿30</p>
+        <Link href='/order/store1/shareorder/orderitem' className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
+          <div className="flex justify-center items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none">
+            <p className='text-[18px] font-bold text-white'>สั่งอาหารเพิ่ม</p>
           </div>
           <div className="h-[34px]">
             <img src="/asset/Home_Indicator.svg" className="h-full w-full"></img>                
           </div>
               
-        </div>
+        </Link>
 
       
         
@@ -312,7 +276,7 @@ setIsOpen1(true)
                     >
                       <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
                         <div className='flex gap-2 items-center my-2'>
-                        <img src='/../../asset/icon/moon-error.png' className='w-1/4'></img>
+                        <img src='/../../../asset/icon/moon-error.png' className='w-1/4'></img>
                         
                         <div className="">
                           <p className='text-[18px] font-semibold'>ยังไม่เปิดให้ใช้งาน</p>
@@ -337,61 +301,9 @@ setIsOpen1(true)
                 </div>
               </Dialog>
             </Transition>
-
-            <Transition appear show={isOpen1} as={Fragment}>
-              <Dialog as="div" className="relative z-10" onClose={closeModal1}>
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <div className="fixed inset-0 bg-black/25" />
-                </Transition.Child>
-      
-                <div className="fixed inset-0 overflow-y-auto">
-                  <div className="flex min-h-full items-center justify-center p-4 text-center">
-                    <Transition.Child
-                      as={Fragment}
-                      enter="ease-out duration-300"
-                      enterFrom="opacity-0 scale-95"
-                      enterTo="opacity-100 scale-100"
-                      leave="ease-in duration-200"
-                      leaveFrom="opacity-100 scale-100"
-                      leaveTo="opacity-0 scale-95"
-                    >
-                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
-                        <div className='flex flex-col gap-2 items-center my-2'>
-                        <img src='/../../asset/icon/cook.gif' className='w-1/4'></img>
-                        
-                        <div className="flex flex-col items-center">
-                          <p className='text-[18px] font-semibold'>สั่งอาหารสำเร็จ</p>
-                          <p className="text-[14px] text-gray-500">
-                            เรากำลังเตรียมออเดอร์ให้คุณ
-                          </p>
-                        </div>
-                        </div>
-      
-                        <div className="mt-4">
-                          <div
-                            className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none "
-                            onClick={() => window.location.href = '/'}
-                          >
-                            รับทราบ
-                          </div>
-                        </div>
-                      </Dialog.Panel>
-                    </Transition.Child>
-                  </div>
-                </div>
-              </Dialog>
-            </Transition>
       </>
       </div>      
   )
 }
 
-export default OrderSummary
+export default OrderItemNotCompletedPage
