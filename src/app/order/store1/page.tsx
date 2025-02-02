@@ -93,20 +93,20 @@ useEffect(() => {
                         </div>
 
                     </div>
-                    <div className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
+                    <Link href='/order/store1/shareorder' className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
                         <div className='flex items-center gap-3'>                            
                                 <div className='flex items-center justify-center'>
                                     <img src='../asset/icon/wait.gif' className='w-20'></img>
                                 </div>
                                 <div className=''>                                    
                                     <p className='text-[16px] font-semibold tracking-tight leading-6'>2 คนกำลังรอแชร์ตะกร้ากับคุณ</p>
-                                    <p className='text-[12px] font-semibold text-[#00ab47]'>ดูเมนูที่สนใจแล้วสั่งร่วมกันได้โดยไม่เสียส่วนต่างขั้นต่ำ</p>
+                                    <p className='text-[12px] font-semibold text-[#00ab47]'>ดูเมนูที่สนใจแล้วสั่งร่วมกันได้โดยไม่เสียค่าส่วนต่างขั้นต่ำ</p>
                                 </div>
                         </div>
                         <div className='flex items-center justify-center w-8 h-8'>
                             <img src="../asset/icon/chevron_right_black.svg" className=""></img>
                         </div>
-                    </div>
+                    </Link>
                     <div className='flex gap-2 mb-3'>
                         <div className='flex items-center justify-center border-[1px] rounded-md px-2 py-1 gap-2'>    
                             <img src='../asset/icon/deliver.svg' className='h-5'></img>                            
@@ -152,20 +152,20 @@ useEffect(() => {
                             <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
                         </div>
                     </div>
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between mb-8'>
                         <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
-                                <img src='../asset/banner/shop1/menu1.png' className='object-cover w-full h-full'></img>
+                                <img src='../asset/banner/shop1/menu3.png' className='object-cover w-full h-full'></img>
                             </div>
-                            <p className='mt-2 text-[13px] font-semibold'>น้ำมะนาว</p>
-                            <p className='mt-[10px] text-[13px] font-semibold'>฿30</p>
+                            <p className='mt-2 text-[13px] font-semibold'>โอรีโอ้ซันเดย์</p>
+                            <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
                         </div>
                         <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
-                                <img src='../asset/banner/shop1/menu2.png' className='object-cover w-full h-full'></img>
+                                <img src='../asset/banner/shop1/menu4.png' className='object-cover w-full h-full'></img>
                             </div>
-                            <p className='mt-2 text-[13px] font-semibold'>สตรอว์เบอร์รี่ซันเดย์</p>
-                            <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
+                            <p className='mt-2 text-[13px] font-semibold'>ชานมไข่มุก</p>
+                            <p className='mt-[10px] text-[13px] font-semibold'>฿50</p>
                         </div>
                     </div>
                 </div>
