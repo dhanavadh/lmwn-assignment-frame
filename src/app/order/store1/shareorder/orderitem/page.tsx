@@ -7,6 +7,7 @@ import FoodOrder from '@/app/Components/FoodOrder'
 const OrderItemPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
+const [isOpen1, setIsOpen1] = useState(false)
 const [show, setShow] = useState(false)
 
 function closeModal() {
@@ -15,6 +16,14 @@ setIsOpen(false)
 
 function openModal() {
 setIsOpen(true)
+}
+
+function closeModal1() {
+setIsOpen1(false)
+}
+
+function openModal1() {
+setIsOpen1(true)
 }
 
 const showTab = () => {
@@ -145,7 +154,7 @@ useEffect(() => {
                             <p className='mt-2 text-[13px] font-semibold'>น้ำมะนาว</p>
                             <p className='mt-[10px] text-[13px] font-semibold'>฿30</p>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal1}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu2.png' className='object-cover w-full h-full'></img>
                             </div>
@@ -154,14 +163,14 @@ useEffect(() => {
                         </div>
                     </div>
                     <div className='flex justify-between mb-8'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal1}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu3.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>โอรีโอ้ซันเดย์</p>
                             <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal1}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu4.png' className='object-cover w-full h-full'></img>
                             </div>
@@ -206,6 +215,60 @@ useEffect(() => {
       
         
       <>      
+
+      <Transition appear show={isOpen1} as={Fragment}>
+              <Dialog as="div" className="relative z-10" onClose={closeModal1}>
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <div className="fixed inset-0 bg-black/25" />
+                </Transition.Child>
+      
+                <div className="fixed inset-0 overflow-y-auto">
+                  <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <Transition.Child
+                      as={Fragment}
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
+                    >
+                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
+                        <div className='flex gap-2 items-center my-2'>
+                        <img src='/../asset/icon/moon-error.png' className='w-1/4'></img>
+                        
+                        <div className="">
+                          <p className='text-[18px] font-semibold'>ยังไม่เปิดให้ใช้งาน</p>
+                          <p className="text-[14px] text-gray-500">
+                            เรากำลังพัฒนาหน้านี้อยู่ และพร้อมให้ทุกคนใช้งานในเร็ว ๆ นี้
+                          </p>
+                        </div>
+                        </div>
+      
+                        <div className="mt-4">
+                          <button
+                            type="button"
+                            className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none "
+                            onClick={closeModal1}
+                          >
+                            เข้าใจแล้ว
+                          </button>
+                        </div>
+                      </Dialog.Panel>
+                    </Transition.Child>
+                  </div>
+                </div>
+              </Dialog>
+            </Transition>
+
             <Transition appear show={isOpen} as={Fragment}>
               <Dialog as="div" className="relative z-10" onClose={closeModal}>
                 {/* <Transition.Child

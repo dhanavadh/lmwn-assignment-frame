@@ -84,14 +84,14 @@ setIsOpen(true)
                         </div>
                     </div>
                 </Link>
-                <Link href='/order/store1' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
+                <div className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2' onClick={openModal}>
                     <img src='../../asset/icon/profile_2.png' className='h-16 w-16 rounded-full'></img>
                     <div className='flex flex-col w-3/4'>
                         <div className='flex justify-between items-center'>
                             <p className='text-[16px] font-semibold tracking-tight'>Cony</p>
                             <p className='text-[16px] font-semibold text-[#00AA47]'>฿45.00</p>
                         </div>
-                        <p className='text-[14px] font-semibold text-[#404040] tracking-tight'>รายการอาหารที่สั่ง</p>                        
+                        <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
                         <div className='flex justify-between items-start my-2'>
                             <div className='flex items-start gap-2'>
                                 <p className='text-[12px] px-1.5 border-[1px] rounded-md font-semibold text-[#7D7D7D]'>1</p>
@@ -119,12 +119,12 @@ setIsOpen(true)
                         </div>
                         <div className='flex items-center justify-end mt-1.5'>                            
                             <div className='flex items-center'>
-                                <p className='text-[12px] text-[#404040] text-end font-semibold'>แชร์ตะกร้ากับ Moon</p>
+                                <p className='text-[12px] text-[#404040] text-end font-semibold'>แชร์ตะกร้ากับ Cony</p>
                                 <img src='../../asset/icon/chevron_right_black.svg' className='h-[16px]'></img>
                             </div>
                         </div>
                     </div>
-                </Link>
+                </div>
     
                     
           

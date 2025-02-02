@@ -155,7 +155,7 @@ useEffect(() => {
                             <p className='mt-2 text-[13px] font-semibold'>น้ำมะนาว</p>
                             <p className='mt-[10px] text-[13px] font-semibold'>฿30</p>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../asset/banner/shop1/menu2.png' className='object-cover w-full h-full'></img>
                             </div>
@@ -164,14 +164,14 @@ useEffect(() => {
                         </div>
                     </div>
                     <div className='flex justify-between mb-8'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col ' onClick={openModal}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../asset/banner/shop1/menu3.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>โอรีโอ้ซันเดย์</p>
                             <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col' onClick={openModal}>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../asset/banner/shop1/menu4.png' className='object-cover w-full h-full'></img>
                             </div>
