@@ -3,10 +3,11 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Link from 'next/link'
 
-const SelfOrderSummaryPage = () => {
+const SelfOrderSummaryWaitPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
 const [isOpen1, setIsOpen1] = useState(false)
+const [isOpen2, setIsOpen2] = useState(false)
 
 function closeModal() {
 setIsOpen(false)
@@ -21,6 +22,14 @@ setIsOpen1(false)
 
 function openModal1() {
 setIsOpen1(true)
+}
+
+function closeModal2() {
+setIsOpen2(false)
+}
+
+function openModal2() {
+setIsOpen2(true)
 }
   return (
     <div className="flex flex-col justify-between items-center relative max-w-[375px] max-h-[812px] font-[family-name:var(--font-noto-sans-thai)]">
@@ -167,7 +176,15 @@ setIsOpen1(true)
                     <div className='flex w-full items-center justify-between gap-2 mb-[10px] border-b-[1px] pb-3'>
                         <p className='text-[16px] font-semibold'>แชร์ตะกร้ากับคนอื่น</p>                                                                               
                         <div className='flex items-center gap-0.5' onClick={openModal}>
-                        <p className='text-[14px] font-semibold text-[#00AA47]'>เปิดห้องแชร์ตะกร้า</p>                                                                     
+                        <div className='flex items-center my-0.5'>
+                            <div className='flex items-center gap-0.5 bg-[#E6F7ED] px-[3px] py-[3px] rounded-full'>
+                                <div className='relative flex items-center justify-center h-[18px]'>
+                                    <span className='absolute inline-flex h-3 w-3 bg-[#00AA47] rounded-full animate-ping z-0'></span>
+                                    <img src="../asset/icon/people.svg" className="inline-flex relative h-[18px] bg-[#00AA47] rounded-full p-0.5 flex-shrink-0 z-10"></img>                                    
+                                </div>  
+                                <p className='text-[12px] tracking-tight leading-[12px] px-1 py-[1.5px] text-[#777777] rounded-[3px] font-semibold'>รอคนเข้าร่วม</p>                                
+                            </div>                            
+                        </div>
                     </div>
                                                           
                   </div>                         
@@ -233,7 +250,7 @@ setIsOpen1(true)
         </div>
 
         <div className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
-          <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none " onClick={openModal1}>
+          <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none " onClick={openModal2}>
             <div className='flex items-center gap-3'>
                 <div className='bg-white rounded-md h-[22px] px-2.5 '>
                     <p className='text-[16px] font-bold text-[#00AA47]'>1</p>
@@ -278,12 +295,70 @@ setIsOpen1(true)
                     >
                       <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
                         <div className='flex flex-col gap-2 items-center my-2'>
-                        <img src='/../../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-1/4'></img>
+                        <img src='/../../asset/icon/wait.gif' className='w-1/4'></img>
                         
                         <div className="flex flex-col items-center">
-                          <p className='text-[18px] font-semibold'>ออเดอร์ของคุณจะถูกแชร์กับคนละแวกใกล้เคียง</p>
+                          <p className='text-[18px] font-semibold'>กำลังรอคนเข้าร่วม</p>
                           <p className="text-[14px] text-gray-500">
                             หากมีคนสนใจแชร์ตะกร้า เราจะแจ้งให้ทราบทันที
+                          </p>
+                        </div>
+                        </div>
+      
+                        <div className="mt-4 flex gap-2">
+                          <div                            
+                            className="flex justify-center rounded-[8px] border border-transparent bg-[#eaeaea] w-full py-2 text-[18px] font-semibold text-[#404040] hover:bg-[#383838] focus:outline-none hover:text-white "
+                            onClick={() => window.location.href = '/order/store1/shareorder/self_order_completed'}
+                          >
+                            แชร์ตะกร้าต่อ
+                          </div>
+                          <div                            
+                            className="flex justify-center rounded-[8px] border border-transparent bg-[#FE4140] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#692222] focus:outline-none "
+                            onClick={() => window.location.href = '/order/self_summary'}
+                          >
+                            ปิดแชร์ตะกร้า
+                          </div>
+                        </div>                        
+                      </Dialog.Panel>
+                    </Transition.Child>
+                  </div>
+                </div>
+              </Dialog>
+            </Transition>
+
+            <Transition appear show={isOpen2} as={Fragment}>
+              <Dialog as="div" className="relative z-10" onClose={closeModal2}>
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0"
+                  enterTo="opacity-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100"
+                  leaveTo="opacity-0"
+                >
+                  <div className="fixed inset-0 bg-black/25" />
+                </Transition.Child>
+      
+                <div className="fixed inset-0 overflow-y-auto">
+                  <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <Transition.Child
+                      as={Fragment}
+                      enter="ease-out duration-300"
+                      enterFrom="opacity-0 scale-95"
+                      enterTo="opacity-100 scale-100"
+                      leave="ease-in duration-200"
+                      leaveFrom="opacity-100 scale-100"
+                      leaveTo="opacity-0 scale-95"
+                    >
+                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
+                        <div className='flex flex-col gap-2 items-center my-2'>
+                        <img src='/../../asset/icon/wait.gif' className='w-1/4'></img>
+                        
+                        <div className="flex flex-col items-center">
+                          <p className='text-[18px] font-semibold'>สั่งโดยไม่แชร์ตะกร้า</p>
+                          <p className="text-[14px] text-gray-500 text-center">
+                            คุณกำลังจะสั่งอาหารแบบไม่แชร์ตะกร้า คำสั่งซื้อนี้อาจเสียส่วนต่างค่าอาหารขั้นต่ำ
                           </p>
                         </div>
                         </div>
@@ -296,10 +371,10 @@ setIsOpen1(true)
                             ยกเลิก
                           </div>
                           <div                            
-                            className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none "
-                            onClick={() => window.location.href = '/order/store1/self_shareorder'}
+                            className="flex justify-center rounded-[8px] border border-transparent bg-[#FE4140] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#692222] focus:outline-none "
+                            onClick={openModal1}
                           >
-                            แชร์ตะกร้า
+                            สั่งโดยไม่แชร์ตะกร้า
                           </div>
                         </div>                        
                       </Dialog.Panel>
@@ -365,4 +440,4 @@ setIsOpen1(true)
   )
 }
 
-export default SelfOrderSummaryPage
+export default SelfOrderSummaryWaitPage

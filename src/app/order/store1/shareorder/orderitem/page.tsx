@@ -103,7 +103,7 @@ useEffect(() => {
                         </div>
 
                     </div>
-                    <Link href='/order/summary' className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
+                    <Link href='/order/store1/shareorder/orderitem_not_completed' className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
                         <div className='flex items-center gap-3'>                            
                                 <div className='flex items-center justify-center'>
                                     <img src='../../../asset/icon/wait.gif' className='w-20'></img>
