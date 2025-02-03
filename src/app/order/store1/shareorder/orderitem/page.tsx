@@ -99,7 +99,7 @@ useEffect(() => {
                                 <p className='text-[12px] text-[#404040]'>จัดส่ง</p>
                                 <img src='../../../asset/icon/arrow_drop_down.svg' className='h-4'></img>
                             </div>
-                            <p className='text-[12px] text-[#404040] px-1 leading-tight'>฿0 · 958 ม. (30 นาที)</p>
+                            <p className='text-[12px] text-[#404040] px-1 leading-tight'>฿5 - 10/คน · 958 ม. (30 นาที)</p>
                         </div>
 
                     </div>

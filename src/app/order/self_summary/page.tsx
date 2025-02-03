@@ -145,7 +145,7 @@ setIsOpen1(true)
                     </div>
                     <div className='flex justify-between items-start my-0.5'>                                                                
                         <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                        <p className='text-[13px] font-semibold text-[#00AA47]'>฿50.00</p>
+                        <p className='text-[13px] font-semibold text-[#00AA47]'>฿80.00</p>
                     </div>          
                   </div>
                 </div>
@@ -178,12 +178,12 @@ setIsOpen1(true)
                   <div className='flex justify-between items-start my-2 w-full'>
                   <div className='flex w-full justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3 gap-2'>
                         <div className='flex items-center gap-2'>                            
-                                <div className='flex items-center justify-center'>
+                                <div className='flex items-center justify-center w-1/4'>
                                     <img src='../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
                                 </div>
-                                <div className=''>                                    
+                                <div className='w-3/4'>                                    
                                     <p className='text-[16px] font-semibold tracking-tight'>ประหยัดส่วนต่างค่าอาหารขั้นต่ำกับใครก็ได้</p>
-                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารและค่าจัดส่งแยกกัน</p>
+                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารแยกกันและค่าจัดส่งคิดเฉลี่ยกัน</p>
                                 </div>                                
                         </div>
                         <div className='text-[14px] text-center font-semibold px-2 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>แชร์ลิงก์</div>

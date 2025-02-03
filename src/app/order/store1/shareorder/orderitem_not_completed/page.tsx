@@ -97,11 +97,11 @@ setIsOpen(true)
                   <div className='flex flex-col gap-2 w-full'>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] rounded-md p-2'>
                       <p className='text-[12px] font-medium'>ส่งตรงทันใจ · {'<'} 20 นาที</p>
-                      <p className='text-[12px] font-medium'>฿16</p>
+                      <p className='text-[12px] font-medium'>฿26</p>
                     </div>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] border-[#00ab47] rounded-md p-2 bg-[#f2fff8]'>
                       <p className='text-[12px] font-medium'>ส่งปกติ · 28 นาที</p>
-                      <p className='text-[12px] font-medium'>ฟรี</p>
+                      <p className='text-[12px] font-medium'>฿10</p>
                     </div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ setIsOpen(true)
                         </div>
                         <div className='flex justify-between items-start'>                                                                
                             <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
+                            <p className='text-[12px] '>฿10.00</p>
                         </div>
                         <div className='flex justify-between items-start my-0.5'>                                                                
                             <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
@@ -186,15 +186,15 @@ setIsOpen(true)
                   <div className='flex justify-between items-start my-2 w-full'>
                   <div className='flex w-full justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3 gap-2'>
                         <div className='flex items-center gap-2'>                            
-                                <div className='flex items-center justify-center'>
+                                <div className='flex items-center justify-center w-1/4'>
                                     <img src='../../../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
                                 </div>
-                                <div className=''>                                    
-                                    <p className='text-[16px] font-semibold tracking-tight leading-6'>คัดลอกลิงก์เพื่อชวนเพื่อน</p>
-                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารและค่าจัดส่งแยกกัน</p>
+                                <div className='w-3/4'>                                    
+                                    <p className='text-[16px] font-semibold tracking-tight'>ประหยัดส่วนต่างค่าอาหารขั้นต่ำกับใครก็ได้</p>
+                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารแยกกันและค่าจัดส่งคิดเฉลี่ยกัน</p>
                                 </div>                                
                         </div>
-                        <div className='text-[14px] text-center font-semibold px-1.5 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>คัดลอก</div>
+                        <div className='text-[14px] text-center font-semibold px-2 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>แชร์ลิงก์</div>
                     </div>
                   </div>                  
                 </div>

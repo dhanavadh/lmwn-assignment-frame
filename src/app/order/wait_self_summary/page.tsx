@@ -114,11 +114,11 @@ setIsOpen2(true)
                   <div className='flex flex-col gap-2 w-full'>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] rounded-md p-2'>
                       <p className='text-[12px] font-medium'>ส่งตรงทันใจ · {'<'} 20 นาที</p>
-                      <p className='text-[12px] font-medium'>฿16</p>
+                      <p className='text-[12px] font-medium'>฿16 - 23</p>
                     </div>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] border-[#00ab47] rounded-md p-2 bg-[#f2fff8]'>
                       <p className='text-[12px] font-medium'>ส่งปกติ · 28 นาที</p>
-                      <p className='text-[12px] font-medium'>ฟรี</p>
+                      <p className='text-[12px] font-medium'>฿0 - 7</p>
                     </div>
                   </div>
                 </div>
@@ -150,13 +150,21 @@ setIsOpen2(true)
                         <p className='text-[12px] '>฿50.00</p>
                     </div>
                     <div className='flex justify-between items-start'>                                                                
-                        <p className='text-[12px] '>ค่าจัดส่ง</p>
+                        <p className='text-[12px] '>ค่าจัดส่ง หากคุณสั่งคนเดียว</p>
                         <p className='text-[12px] '>฿0.00</p>
+                    </div>
+                    <div className='flex justify-between items-start'>                                                                
+                        <p className='text-[12px] text-orange-400 font-semibold'>ค่าจัดส่ง หากคุณสั่งแบบแชร์ตะกร้า</p>
+                        <p className='text-[12px] '>฿0.00 - 7.00</p>
                     </div>
                     <div className='flex justify-between items-start my-0.5'>                                                                
                         <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                        <p className='text-[13px] font-semibold text-[#00AA47]'>฿50.00</p>
+                        <p className='text-[13px] font-semibold text-[#00AA47]'>฿80.00 - 87.00</p>
                     </div>          
+                  </div>
+
+                  <div className='flex w-full items-center justify-center gap-2 bg-[#f6f6f6] mt-2'>
+                    <p className='text-[12px] px-2 py-1'>ค่าจัดส่งจะคิดตามจำนวนคนแชร์ตะกร้าร่วมกันและระยะทางระหว่างคนแชร์ตะกร้า ยิ่งคนสั่งมาก ค่าส่งยิ่งถูก</p>                                                                               
                   </div>
                 </div>
                 

@@ -105,11 +105,11 @@ setIsOpen1(true)
                   <div className='flex flex-col gap-2 w-full'>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] rounded-md p-2'>
                       <p className='text-[12px] font-medium'>ส่งตรงทันใจ · {'<'} 20 นาที</p>
-                      <p className='text-[12px] font-medium'>฿16</p>
+                      <p className='text-[12px] font-medium'>฿26</p>
                     </div>
                     <div className='flex items-center justify-between w-full py-[8px] border-[1px] border-[#00ab47] rounded-md p-2 bg-[#f2fff8]'>
                       <p className='text-[12px] font-medium'>ส่งปกติ · 28 นาที</p>
-                      <p className='text-[12px] font-medium'>ฟรี</p>
+                      <p className='text-[12px] font-medium'>฿10</p>
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ setIsOpen1(true)
                     <div className='flex flex-col w-4/5'>
                         <div className='flex justify-between items-center'>
                             <p className='text-[16px] font-semibold tracking-tight'>Moon</p>
-                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿50.00</p>
+                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿60.00</p>
                         </div>
                         <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
                         <div className='flex justify-between items-start my-2'>
@@ -160,13 +160,13 @@ setIsOpen1(true)
                         </div>
                         <div className='flex justify-between items-start'>                                                                
                             <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
+                            <p className='text-[12px] '>฿10.00</p>
                         </div>
                         <div className='flex justify-between items-start my-0.5'>                                                                
                             <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿50.00</p>
-                        </div>                        
-                    </div>
+                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿60.00</p>
+                        </div>                                              
+                    </div>                    
                 </Link>
 
                 <Link href='/order/store1/shareorder/orderitem' className='flex px-4 bg-white border-b-[1px] border-[#EEEEEE] pb-[23px] pt-4 gap-2'>
@@ -177,7 +177,7 @@ setIsOpen1(true)
                     <div className='flex flex-col w-4/5'>
                         <div className='flex justify-between items-center'>
                             <p className='text-[16px] font-semibold tracking-tight'>Tay</p>
-                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿30.00</p>
+                            <p className='text-[16px] font-semibold text-[#00AA47]'>฿40.00</p>
                         </div>
                         <p className='text-[14px] font-semibold text-[#7D7D7D] tracking-tight'>รายการอาหารที่สั่ง</p>                        
                         <div className='flex justify-between items-start my-2'>
@@ -196,14 +196,18 @@ setIsOpen1(true)
                         </div>
                         <div className='flex justify-between items-start'>                                                                
                             <p className='text-[12px] '>ค่าจัดส่ง</p>
-                            <p className='text-[12px] '>฿0.00</p>
+                            <p className='text-[12px] '>฿10.00</p>
                         </div>
                         <div className='flex justify-between items-start my-0.5'>                                                                
                             <p className='text-[13px] font-semibold text-[#00AA47]'>ทั้งหมด</p>
-                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿30.00</p>
-                        </div>                        
+                            <p className='text-[13px] font-semibold text-[#00AA47]'>฿40.00</p>
+                        </div> 
+                        <div className='flex w-full items-center justify-center gap-2 bg-[#f6f6f6] mt-2'>
+                          <p className='text-[12px] px-2 py-1'>ค่าจัดส่งจะคิดตามจำนวนคนแชร์ตะกร้าร่วมกันและระยะทางระหว่างคนแชร์ตะกร้า ยิ่งคนสั่งมาก ค่าส่งยิ่งถูก</p>                                                                               
+                        </div>                       
                     </div>
                 </Link>
+                
 
                 <div className='h-2 bg-[#EEEEEE]'></div>
 
@@ -216,15 +220,15 @@ setIsOpen1(true)
                   <div className='flex justify-between items-start my-2 w-full'>
                   <div className='flex w-full justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3 gap-2'>
                         <div className='flex items-center gap-2'>                            
-                                <div className='flex items-center justify-center'>
+                                <div className='flex items-center justify-center w-1/4'>
                                     <img src='../asset/icon/Hungry_Moon_Sticker_by_LMWN.gif' className='w-20'></img>
                                 </div>
-                                <div className=''>                                    
-                                    <p className='text-[16px] font-semibold tracking-tight leading-6'>คัดลอกลิงก์เพื่อชวนเพื่อน</p>
-                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารและค่าจัดส่งแยกกัน</p>
+                                <div className='w-3/4'>                                    
+                                    <p className='text-[16px] font-semibold tracking-tight'>ประหยัดส่วนต่างค่าอาหารขั้นต่ำกับใครก็ได้</p>
+                                    <p className='text-[12px] font-semibold text-[#00ab47]'>การแชร์ตะกร้าจะคิดเงินค่าอาหารแยกกันและค่าจัดส่งคิดเฉลี่ยกัน</p>
                                 </div>                                
                         </div>
-                        <div className='text-[14px] text-center font-semibold px-1.5 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>คัดลอก</div>
+                        <div className='text-[14px] text-center font-semibold px-2 py-1.5 bg-[#00ab47] rounded-lg text-white flex-shrink-0'>แชร์ลิงก์</div>
                     </div>
                   </div>                  
                 </div>
@@ -274,7 +278,7 @@ setIsOpen1(true)
                 </div>
                 <p className='text-[18px] font-bold text-white'>สั่งเลย</p>
             </div>
-            <p className='text-[18px] font-bold text-white'>฿30</p>
+            <p className='text-[18px] font-bold text-white'>฿40</p>
           </div>
           <div className="h-[34px]">
             <img src="/asset/Home_Indicator.svg" className="h-full w-full"></img>                
