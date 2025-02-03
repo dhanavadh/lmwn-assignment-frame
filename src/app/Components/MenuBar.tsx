@@ -22,7 +22,7 @@ setIsOpen(true)
                   <img src="/asset/icon/home.svg" className="h-6"></img>
                   <p className="mt-2 text-[12px] font-medium text-[#00AE35]">หน้าแรก</p>
                 </div>
-                <div className="flex flex-col items-center pt-2">
+                <div className="flex flex-col items-center pt-2" onClick={openModal}>
                   <img src="/asset/icon/order.svg" className="h-6"></img>
                   <p className="mt-2 text-[12px] font-medium">คำสั่งซื้อ</p>
                 </div>

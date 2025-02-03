@@ -110,7 +110,7 @@ setIsOpen(true)
                 <div className='flex flex-col px-4 items-start mt-[20px]'>                            
                   <div className='flex w-full items-center justify-between gap-2 mb-[10px]'>
                     <p className='text-[16px] font-semibold'>รายการอาหารที่สั่ง</p>                                                                               
-                    <p className='text-[14px] font-semibold text-[#00AA47]'>สั่งอาหารเพิ่ม</p>                                                                            
+                    <p className='text-[14px] font-semibold text-[#00AA47]' onClick={() => window.location.href = '/order/store1/shareorder/orderitem'}>สั่งอาหารเพิ่ม</p>                                                                            
                                                           
                   </div>
                   {/* <div className='flex justify-between items-start my-2 w-full'>

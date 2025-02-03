@@ -4,10 +4,9 @@ import { Fragment, useState, useEffect } from 'react'
 import Link from 'next/link'
 import FoodOrder from '@/app/Components/FoodOrder'
 
-const OrderItemPage = () => {
+const WaitSelfOrderPage = () => {
 
 const [isOpen, setIsOpen] = useState(false)
-const [isOpen1, setIsOpen1] = useState(false)
 const [show, setShow] = useState(false)
 
 function closeModal() {
@@ -16,14 +15,6 @@ setIsOpen(false)
 
 function openModal() {
 setIsOpen(true)
-}
-
-function closeModal1() {
-setIsOpen1(false)
-}
-
-function openModal1() {
-setIsOpen1(true)
 }
 
 const showTab = () => {
@@ -56,7 +47,7 @@ useEffect(() => {
                 <div className="sticky top-[62px] w-full ">
                     <div className='px-4 flex justify-between items-center z-30 mt-1 mb-[70px]'>
                         <div className='flex'>
-                            <img src="../../../asset/icon/chevron_left_weight.svg" className="w-8 h-8 bg-white rounded-full" onClick={() => window.location.href = '/order/store1/shareorder'}></img>
+                            <img src="../../../asset/icon/chevron_left_weight.svg" className="w-8 h-8 bg-white rounded-full" onClick={() => window.location.href = '/order'}></img>
                         </div>
                         <div className="flex items-center gap-1.5">                            
                             <div className='flex items-center justify-center w-8 h-8 p-1.5 bg-white rounded-full'>
@@ -103,14 +94,14 @@ useEffect(() => {
                         </div>
 
                     </div>
-                    <Link href='/order/store1/shareorder/orderitem_not_completed' className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
+                    <Link href='/order/store1/self_shareorder' className='flex justify-between items-center bg-[#f2fff8] px-4 py-2 rounded-lg mb-3'>
                         <div className='flex items-center gap-3'>                            
                                 <div className='flex items-center justify-center'>
                                     <img src='../../../asset/icon/wait.gif' className='w-20'></img>
                                 </div>
                                 <div className=''>                                    
-                                    <p className='text-[16px] font-semibold tracking-tight leading-6'>คุณกำลังแชร์ตะกร้ากับ Moon</p>
-                                    <p className='text-[12px] font-semibold text-[#00ab47]'>เลือกเมนูที่สนใจและดูคำสั่งซื้อได้ที่นี่</p>
+                                    <p className='text-[16px] font-semibold tracking-tight leading-6'>2 คนกำลังรอแชร์ตะกร้ากับคุณ</p>
+                                    <p className='text-[12px] font-semibold text-[#00ab47]'>ดูเมนูที่สนใจแล้วสั่งร่วมกันได้โดยไม่เสียค่าส่วนต่างขั้นต่ำ</p>
                                 </div>
                         </div>
                         <div className='flex items-center justify-center w-8 h-8'>
@@ -152,9 +143,14 @@ useEffect(() => {
                                 <img src='../../../asset/banner/shop1/menu1.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>น้ำมะนาว</p>
-                            <p className='mt-[10px] text-[13px] font-semibold'>฿30</p>
+                            <div className='mt-[10px] flex items-start justify-between'>
+                                <p className='text-[13px] font-semibold'>฿30</p>
+                                <div className='relative bg-[#00AA47] rounded-full w-7 h-7 flex items-center justify-center'>
+                                    <p className='text-[15px] font-semibold text-white absolute'>1</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className='flex flex-col' onClick={openModal1}>
+                        <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu2.png' className='object-cover w-full h-full'></img>
                             </div>
@@ -163,23 +159,20 @@ useEffect(() => {
                         </div>
                     </div>
                     <div className='flex justify-between mb-8'>
-                        <div className='flex flex-col' onClick={openModal1}>
+                        <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu3.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>โอรีโอ้ซันเดย์</p>
                             <p className='mt-[10px] text-[13px] font-semibold'>฿45</p>
                         </div>
-                        <div className='flex flex-col' onClick={openModal1}>
+                        <div className='flex flex-col'>
                             <div className='relative w-[165px] h-[165px] bg-blue-300 rounded-md'>
                                 <img src='../../../asset/banner/shop1/menu4.png' className='object-cover w-full h-full'></img>
                             </div>
                             <p className='mt-2 text-[13px] font-semibold'>ชานมไข่มุก</p>
                             <div className='mt-[10px] flex items-start justify-between'>
-                                <p className='text-[13px] font-semibold'>฿50</p>
-                                <div className='relative bg-[#00AA47] rounded-full w-7 h-7 flex items-center justify-center'>
-                                    <p className='text-[15px] font-semibold text-white absolute'>1</p>
-                                </div>
+                                <p className='text-[13px] font-semibold'>฿50</p>                                
                             </div>
                         </div>
                     </div>
@@ -192,10 +185,7 @@ useEffect(() => {
             </div>          
         </div>
 
-        <Link href='/order/store1/shareorder/orderitem_not_completed' className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
-            <div className='h-4 mt-3'>
-                <p className='text-[14px] px-4'>สั่งอีก ฿30 เพื่อประหยัดส่วนต่างค่าส่ง</p>
-            </div>
+        <Link href='/order/wait_self_summary' className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 h-[141px] ">
                 <div className="flex justify-between items-center flex-cols-4 h-[45px] mx-4 bg-[#00AA47] rounded-lg my-4 px-[14px] hover:bg-[#00542D] focus:outline-none">
                     <div className='flex items-center gap-3'>
                         <div className='bg-white rounded-md h-[22px] px-2.5 '>
@@ -210,65 +200,11 @@ useEffect(() => {
                     
                 </div>
               
-        </Link>
+        </Link>  
 
       
         
       <>      
-
-      <Transition appear show={isOpen1} as={Fragment}>
-              <Dialog as="div" className="relative z-10" onClose={closeModal1}>
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <div className="fixed inset-0 bg-black/25" />
-                </Transition.Child>
-      
-                <div className="fixed inset-0 overflow-y-auto">
-                  <div className="flex min-h-full items-center justify-center p-4 text-center">
-                    <Transition.Child
-                      as={Fragment}
-                      enter="ease-out duration-300"
-                      enterFrom="opacity-0 scale-95"
-                      enterTo="opacity-100 scale-100"
-                      leave="ease-in duration-200"
-                      leaveFrom="opacity-100 scale-100"
-                      leaveTo="opacity-0 scale-95"
-                    >
-                      <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[16px] bg-white p-4 text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
-                        <div className='flex gap-2 items-center my-2'>
-                        <img src='/../asset/icon/moon-error.png' className='w-1/4'></img>
-                        
-                        <div className="">
-                          <p className='text-[18px] font-semibold'>ยังไม่เปิดให้ใช้งาน</p>
-                          <p className="text-[14px] text-gray-500">
-                            เรากำลังพัฒนาหน้านี้อยู่ และพร้อมให้ทุกคนใช้งานในเร็ว ๆ นี้
-                          </p>
-                        </div>
-                        </div>
-      
-                        <div className="mt-4">
-                          <button
-                            type="button"
-                            className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none "
-                            onClick={closeModal1}
-                          >
-                            เข้าใจแล้ว
-                          </button>
-                        </div>
-                      </Dialog.Panel>
-                    </Transition.Child>
-                  </div>
-                </div>
-              </Dialog>
-            </Transition>
-
             <Transition appear show={isOpen} as={Fragment}>
               <Dialog as="div" className="relative z-10" onClose={closeModal}>
                 {/* <Transition.Child
@@ -401,10 +337,6 @@ useEffect(() => {
                                     <div className='flex justify-between bg-white px-4'>
                                         <div>
                                             <p className='pt-[14px] font-semibold text-[16px]'>รายละเอียดเพิ่มเติม</p>
-                                            <p className=' text-[14px]'>กรุณาเลือก 1 ข้อ</p>
-                                        </div>
-                                        <div className='flex items-center'>                                            
-                                            <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
                                         </div>
                                     </div>
                                     <div className='flex mt-3 px-4 '>
@@ -430,10 +362,10 @@ useEffect(() => {
                                         <img src='/../../../asset/icon/add.svg'></img>
                                     </div>
                                 </div>
-                                <Link href='/order/store1/shareorder/orderitem_completed' className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none"
-                                >
+                                <div className="flex justify-center rounded-[8px] border border-transparent bg-[#00B114] w-full py-2 text-[18px] font-semibold text-white hover:bg-[#00542D] focus:outline-none"
+                                onClick={closeModal}>
                                     <p>ใส่ตะกร้า</p>
-                                </Link>                                                                
+                                </div>                                                                
                             </div>
                           
                         </div>
@@ -449,4 +381,4 @@ useEffect(() => {
   )
 }
 
-export default OrderItemPage
+export default WaitSelfOrderPage

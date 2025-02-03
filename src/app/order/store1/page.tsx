@@ -271,7 +271,7 @@ useEffect(() => {
                     >
                       <Dialog.Panel className="flex flex-col h-[812px] w-full transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
                         <div className='mb-4'>
-                            <div className='relative h-[150px] bg-blue-300 brightness-50'>
+                            <div className='relative h-[210px] bg-blue-300 brightness-50'>
                                 <img src='/../../../asset/banner/shop1/menu1.png' className='absolute inset-0 w-full h-full object-cover'></img>
                             </div>
                             <div className='mt-[59px] w-9 h-9 bg-white rounded-full absolute top-0 left-4 flex items-center justify-center' onClick={closeModal}>

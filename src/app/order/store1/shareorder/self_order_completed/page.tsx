@@ -232,7 +232,7 @@ useEffect(() => {
                     >
                       <Dialog.Panel className="flex flex-col h-[812px] w-full transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all font-[family-name:var(--font-noto-sans-thai)]">
                         <div className='mb-4'>
-                            <div className='relative h-[150px] bg-blue-300 brightness-50'>
+                            <div className='relative h-[210px] bg-blue-300 brightness-50'>
                                 <img src='/../../../asset/banner/shop1/menu1.png' className='absolute inset-0 w-full h-full object-cover'></img>
                             </div>
                             <div className='mt-[59px] w-9 h-9 bg-white rounded-full absolute top-0 left-4 flex items-center justify-center' onClick={closeModal}>
@@ -337,15 +337,7 @@ useEffect(() => {
                                     <div className='flex justify-between bg-white px-4'>
                                         <div>
                                             <p className='pt-[14px] font-semibold text-[16px]'>รายละเอียดเพิ่มเติม</p>
-                                            <p className=' text-[14px]'>กรุณาเลือก 1 ข้อ</p>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <div className='flex items-center px-1 py-0.5 bg-[#E6F7ED] rounded-full'>
-                                                <img src='/../../../asset/icon/check_green.svg' className='h-4 w-4 mr-1'></img>
-                                                <p className='text-[12px] text-[#00A837]'>ต้องระบุ</p>
-                                            </div>
-                                            <img src='/../../../asset/icon/arrow_drop_up.svg'></img>
-                                        </div>
+                                        </div>                                        
                                     </div>
                                     <div className='flex mt-3 px-4 '>
                                         <label className='flex items-center w-full text-[14px] h-[46px]'>

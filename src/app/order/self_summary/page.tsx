@@ -118,8 +118,7 @@ setIsOpen1(true)
                 <div className='flex flex-col px-4 items-start my-[20px]'>                            
                   <div className='flex w-full items-center justify-between gap-2 mb-[10px]'>
                     <p className='text-[16px] font-semibold'>รายการอาหารที่สั่ง</p>                                                                               
-                    <p className='text-[14px] font-semibold text-[#00AA47]'>สั่งอาหารเพิ่ม</p>                                                                            
-                                                          
+                    <p className='text-[14px] font-semibold text-[#00AA47]' onClick={() => window.location.href = '/order/store1/shareorder/self_order_completed'}>สั่งอาหารเพิ่ม</p>                                                                                                
                   </div>
                   <div className='flex justify-between items-start my-2 w-full'>
                             <div className='flex items-start gap-2'>
@@ -158,7 +157,7 @@ setIsOpen1(true)
                 <div className='flex flex-col px-4 items-start mt-[20px]'>   
                     <div className='flex w-full items-center justify-between gap-2 mb-[10px] border-b-[1px] pb-3'>
                         <p className='text-[16px] font-semibold'>2 คนสนใจแชร์ตะกร้ากับคุณ</p>                                                                               
-                        <div className='flex items-center gap-0.5' onClick={() => window.location.href = '/order/store1/shareorder'}>
+                        <div className='flex items-center gap-0.5' onClick={() => window.location.href = '/order/store1/shareorder_but_self'}>
                         <p className='text-[14px] '>ดูเพิ่ม</p>   
                         <img src='../../asset/icon/chevron_right_black.svg'></img>                                                                         
                         </div>
@@ -291,7 +290,7 @@ setIsOpen1(true)
                         <div className="mt-4 flex gap-2">
                           <div                            
                             className="flex justify-center rounded-[8px] border border-transparent bg-[#eaeaea] w-full py-2 text-[18px] font-semibold text-[#404040] hover:bg-[#383838] focus:outline-none hover:text-white "
-                            onClick={() => window.location.href = '/order/store1/shareorder/self_order_completed'}
+                            onClick={closeModal}
                           >
                             ยกเลิก
                           </div>

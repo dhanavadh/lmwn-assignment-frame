@@ -31,7 +31,7 @@ export default function Home() {
                     {/* Hello Word */}
                     <div className="flex justify-between w-full items-center">
                     <div>
-                      <p className="text-[16px] font-semibold text-white">สวัสดี โคนี่</p>
+                      <p className="text-[16px] font-semibold text-white">สวัสดี Tay</p>
                       <div className="flex items-center mt-[2px]">
                       <p className="text-[18px] font-bold text-white drop-shadow-lg">มื้อนี้มีเปย์ ลดสูงสุด 70%</p>
                       <div className="flex items-center justify-center w-6 h-6 ml-[2px]">
