@@ -164,7 +164,7 @@ setIsOpen(true)
                     <a className='w-4 h-[6px] bg-neutral-300 rounded-full'></a>
                 </div>
                 <div className='flex items-center justify-center h-[112px] w-full px-4 overflow-hidden bg-white'>
-                  <img src='/asset/banner/banner_3.png' alt='Mart' layout='fill' objectfit='contain' className='rounded-lg'></img>
+                  <img src='/asset/banner/banner_3.png' alt='Mart' className='rounded-lg object-fill'></img>
                 </div>
                 <div className="flex items-start justify-start w-full h-[203px] rounded-[5px] py-6 overflow-hidden px-2 bg-white ">
                     <img src="/asset/ads/image.png" className="w-full rounded-[5px]"></img>
