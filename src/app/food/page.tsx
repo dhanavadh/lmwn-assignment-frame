@@ -127,31 +127,31 @@ setIsOpen(true)
                             </div>
                             <div className='flex flex-col items-center'>
                                 <div className='flex items-center justify-center h-12 w-12 bg-green-300 rounded-xl overflow-hidden' onClick={() => window.location.href = '/order'}>
-                                  <img src='/asset/menu/mart.png' alt='Mart' layout='fill' objectfit='contain' className='w-10 h-10'></img>
+                                  <img src='/asset/menu/mart.png' alt='Mart' className='w-10 h-10 object-fill'></img>
                                 </div>
                                 <p className='flex mt-1 text-center text-[12px] leading-4'>แชร์ตะกร้า<br></br>กับนักกิน</p>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <div className='flex items-center justify-center h-12 w-12 bg-green-300 rounded-xl overflow-hidden' onClick={openModal}>
-                                  <img src='/asset/icon/discount_100.png' alt='Mart' layout='fill' objectfit='contain'></img>
+                                  <img src='/asset/icon/discount_100.png' className='object-fill'></img>
                                 </div>
                                 <p className='flex mt-1 text-center text-[12px] leading-4'>ลด ฿100*<br></br>ไม่มีขั้นต่ำ</p>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <div className='flex items-center justify-center h-12 w-12 bg-green-300 rounded-xl overflow-hidden'onClick={openModal}>
-                                  <img src='/asset/icon/cola.png' alt='Mart' layout='fill' objectfit='contain'></img>
+                                  <img src='/asset/icon/cola.png' alt='Mart' className='object-fill'></img>
                                 </div>
                                 <p className='flex mt-1 text-center text-[12px] leading-4'>Coca-Cola<br></br>Discount</p>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <div className='flex items-center justify-center h-12 w-12 bg-green-300 rounded-xl overflow-hidden'onClick={openModal}>
-                                  <img src='/asset/icon/foodie.png' alt='Mart' layout='fill' objectfit='contain'></img>
+                                  <img src='/asset/icon/foodie.png' alt='Mart' className='object-fill'></img>
                                 </div>
                                 <p className='flex mt-1 text-center text-[12px] leading-4'>ใส่ "FOODIE"<br></br>ลด ฿100*</p>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <div className='flex items-center justify-center h-12 w-12 bg-green-300 rounded-xl overflow-hidden'onClick={openModal}>
-                                  <img src='/asset/icon/super_brand.png' alt='Mart' layout='fill' objectfit='contain'></img>
+                                  <img src='/asset/icon/super_brand.png' alt='Mart' className='object-fill'></img>
                                 </div>
                                 <p className='flex mt-1 text-center text-[12px] leading-4'>แบรนด์ดัง ลด<br></br>แรง 7 วัน!</p>
                             </div>
